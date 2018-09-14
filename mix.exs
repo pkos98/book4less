@@ -41,7 +41,11 @@ defmodule Book4less.MixProject do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:poison, "~> 3.1"},
+      {:httpoison, "~> 1.0"},
+      {:floki, "~> 0.20.0"},
+      {:html5ever, "~> 0.6.1"}
     ]
   end
 

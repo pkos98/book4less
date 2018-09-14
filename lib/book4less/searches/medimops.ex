@@ -1,6 +1,6 @@
-defmodule Book4less.Searches.Medimops do
-  alias Book4less.Searches.Query
-  alias Book4less.Books.Book
+defmodule Book4Less.Searches.Medimops do
+  alias Book4Less.Searches.Query
+  alias Book4Less.Books.Book
 
   @base_url "https://www.medimops.de/buecher-C0186606/?fcIsSearch=1&"
 

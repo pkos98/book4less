@@ -28,9 +28,9 @@ defmodule Book4lessWeb.ConnCase do
 
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Book4less.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Book4Less.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Book4less.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Book4Less.Repo, {:shared, self()})
     end
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end

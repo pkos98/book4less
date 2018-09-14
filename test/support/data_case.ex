@@ -1,4 +1,4 @@
-defmodule Book4less.DataCase do
+defmodule Book4Less.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,20 +16,20 @@ defmodule Book4less.DataCase do
 
   using do
     quote do
-      alias Book4less.Repo
+      alias Book4Less.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import Book4less.DataCase
+      import Book4Less.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Book4less.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Book4Less.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Book4less.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Book4Less.Repo, {:shared, self()})
     end
 
     :ok

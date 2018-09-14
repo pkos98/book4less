@@ -1,4 +1,4 @@
-defmodule Book4less.Books.Book do
+defmodule Book4Less.Books.Book do
   defstruct [
     :title,
     :link,

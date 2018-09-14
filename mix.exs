@@ -1,4 +1,4 @@
-defmodule Book4less.MixProject do
+defmodule Book4Less.MixProject do
   use Mix.Project
 
   def project do
@@ -19,7 +19,7 @@ defmodule Book4less.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Book4less.Application, []},
+      mod: {Book4Less.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

@@ -10,7 +10,7 @@ config :book4less, Book4lessWeb.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :book4less, Book4less.Repo,
+config :book4less, Book4Less.Repo,
   username: "postgres",
   password: "postgres",
   database: "book4less_test",

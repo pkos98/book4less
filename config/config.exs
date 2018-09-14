@@ -7,14 +7,14 @@ use Mix.Config
 
 # General application configuration
 config :book4less,
-  ecto_repos: [Book4less.Repo]
+  ecto_repos: [Book4Less.Repo]
 
 # Configures the endpoint
 config :book4less, Book4lessWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "WLkXWw0Gl1rOLdcEC1jGFqWMXlmukxTfzlbDiWZkfjx0ptBGceERyZksgXc+2zw7",
   render_errors: [view: Book4lessWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Book4less.PubSub,
+  pubsub: [name: Book4Less.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

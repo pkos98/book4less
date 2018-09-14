@@ -1,4 +1,4 @@
-defmodule Book4less.Application do
+defmodule Book4Less.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   @moduledoc false
@@ -9,16 +9,16 @@ defmodule Book4less.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      Book4less.Repo,
+      Book4Less.Repo,
       # Start the endpoint when the application starts
       Book4lessWeb.Endpoint,
-      # Starts a worker by calling: Book4less.Worker.start_link(arg)
-      # {Book4less.Worker, arg},
+      # Starts a worker by calling: Book4Less.Worker.start_link(arg)
+      # {Book4Less.Worker, arg},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Book4less.Supervisor]
+    opts = [strategy: :one_for_one, name: Book4Less.Supervisor]
     Supervisor.start_link(children, opts)
   end
 

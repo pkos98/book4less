@@ -52,7 +52,7 @@ config :phoenix, :stacktrace_depth, 20
 config :phoenix, :plug_init_mode, :runtime
 
 # Configure your database
-config :book4less, Book4less.Repo,
+config :book4less, Book4Less.Repo,
   username: "postgres",
   password: "postgres",
   database: "book4less_dev",

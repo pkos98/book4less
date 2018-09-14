@@ -1,9 +1,9 @@
-defmodule Book4less.Searches.Query do
+defmodule Book4Less.Searches.Query do
   # for the schema macro
   use Ecto.Schema
   # for the changeset functions
   import Ecto.Changeset
-  alias Book4less.Searches.Query
+  alias Book4Less.Searches.Query
 
   @required_fields [:title]
   @permitted_fields [:title, :author, :country]

@@ -1,4 +1,4 @@
-defmodule Book4Less.Searches.Medimops do
+defmodule Book4Less.BookStores.Medimops do
   use Book4Less.BookStores.BookStore, :book_store
 
   @moduledoc """

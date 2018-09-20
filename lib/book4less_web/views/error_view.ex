@@ -1,5 +1,5 @@
-defmodule Book4lessWeb.ErrorView do
-  use Book4lessWeb, :view
+defmodule Book4LessWeb.ErrorView do
+  use Book4LessWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

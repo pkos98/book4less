@@ -1,11 +1,11 @@
-defmodule Book4lessWeb.Gettext do
+defmodule Book4LessWeb.Gettext do
   @moduledoc """
   A module providing Internationalization with a gettext-based API.
 
   By using [Gettext](https://hexdocs.pm/gettext),
   your module gains a set of macros for translations, for example:
 
-      import Book4lessWeb.Gettext
+      import Book4LessWeb.Gettext
 
       # Simple translation
       gettext("Here is the string to translate")

@@ -1,4 +1,4 @@
-defmodule Book4lessWeb.ConnCase do
+defmodule Book4LessWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -19,10 +19,10 @@ defmodule Book4lessWeb.ConnCase do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
-      alias Book4lessWeb.Router.Helpers, as: Routes
+      alias Book4LessWeb.Router.Helpers, as: Routes
 
       # The default endpoint for testing
-      @endpoint Book4lessWeb.Endpoint
+      @endpoint Book4LessWeb.Endpoint
     end
   end
 

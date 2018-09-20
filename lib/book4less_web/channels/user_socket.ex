@@ -1,8 +1,9 @@
-defmodule Book4lessWeb.UserSocket do
+defmodule Book4LessWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", Book4lessWeb.RoomChannel
+  # channel "room:*", Book4LessWeb.RoomChannel
+  channel "search:*", Book4LessWeb.SearchChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
@@ -26,7 +27,7 @@ defmodule Book4lessWeb.UserSocket do
   # Would allow you to broadcast a "disconnect" event and terminate
   # all active sockets and channels for a given user:
   #
-  #     Book4lessWeb.Endpoint.broadcast("user_socket:#{user.id}", "disconnect", %{})
+  #     Book4LessWeb.Endpoint.broadcast("user_socket:#{user.id}", "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil

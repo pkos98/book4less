@@ -1,3 +1,3 @@
-defmodule Book4lessWeb.PageView do
-  use Book4lessWeb, :view
+defmodule Book4LessWeb.PageView do
+  use Book4LessWeb, :view
 end

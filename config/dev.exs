@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :book4less, Book4lessWeb.Endpoint,
+config :book4less, Book4LessWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -31,7 +31,7 @@ config :book4less, Book4lessWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :book4less, Book4lessWeb.Endpoint,
+config :book4less, Book4LessWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},

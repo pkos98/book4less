@@ -1,5 +1,5 @@
-defmodule Book4lessWeb.PageController do
-  use Book4lessWeb, :controller
+defmodule Book4LessWeb.PageController do
+  use Book4LessWeb, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

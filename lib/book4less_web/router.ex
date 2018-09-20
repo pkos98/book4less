@@ -1,5 +1,5 @@
-defmodule Book4lessWeb.Router do
-  use Book4lessWeb, :router
+defmodule Book4LessWeb.Router do
+  use Book4LessWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule Book4lessWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Book4lessWeb do
+  scope "/", Book4LessWeb do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Book4lessWeb do
+  # scope "/api", Book4LessWeb do
   #   pipe_through :api
   # end
 end

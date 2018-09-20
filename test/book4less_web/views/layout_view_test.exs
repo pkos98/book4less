@@ -1,3 +1,3 @@
-defmodule Book4lessWeb.LayoutViewTest do
-  use Book4lessWeb.ConnCase, async: true
+defmodule Book4LessWeb.LayoutViewTest do
+  use Book4LessWeb.ConnCase, async: true
 end

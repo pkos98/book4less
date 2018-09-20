@@ -11,7 +11,7 @@ defmodule Book4Less.Application do
       # Start the Ecto repository
       Book4Less.Repo,
       # Start the endpoint when the application starts
-      Book4lessWeb.Endpoint,
+      Book4LessWeb.Endpoint,
       # Starts a worker by calling: Book4Less.Worker.start_link(arg)
       # {Book4Less.Worker, arg},
     ]
@@ -25,7 +25,7 @@ defmodule Book4Less.Application do
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    Book4lessWeb.Endpoint.config_change(changed, removed)
+    Book4LessWeb.Endpoint.config_change(changed, removed)
     :ok
   end
 end

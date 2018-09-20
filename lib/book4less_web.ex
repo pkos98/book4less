@@ -1,12 +1,12 @@
-defmodule Book4lessWeb do
+defmodule Book4LessWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use Book4lessWeb, :controller
-      use Book4lessWeb, :view
+      use Book4LessWeb, :controller
+      use Book4LessWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,18 +19,18 @@ defmodule Book4lessWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: Book4lessWeb
+      use Phoenix.Controller, namespace: Book4LessWeb
 
       import Plug.Conn
-      import Book4lessWeb.Gettext
-      alias Book4lessWeb.Router.Helpers, as: Routes
+      import Book4LessWeb.Gettext
+      alias Book4LessWeb.Router.Helpers, as: Routes
     end
   end
 
   def view do
     quote do
       use Phoenix.View, root: "lib/book4less_web/templates",
-                        namespace: Book4lessWeb
+                        namespace: Book4LessWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
@@ -38,9 +38,9 @@ defmodule Book4lessWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Book4lessWeb.ErrorHelpers
-      import Book4lessWeb.Gettext
-      alias Book4lessWeb.Router.Helpers, as: Routes
+      import Book4LessWeb.ErrorHelpers
+      import Book4LessWeb.Gettext
+      alias Book4LessWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -55,7 +55,7 @@ defmodule Book4lessWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import Book4lessWeb.Gettext
+      import Book4LessWeb.Gettext
     end
   end
 

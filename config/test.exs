@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :book4less, Book4lessWeb.Endpoint,
+config :book4less, Book4LessWeb.Endpoint,
   http: [port: 4001],
   server: false
 

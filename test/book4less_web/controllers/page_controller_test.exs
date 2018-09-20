@@ -1,5 +1,5 @@
-defmodule Book4lessWeb.PageControllerTest do
-  use Book4lessWeb.ConnCase
+defmodule Book4LessWeb.PageControllerTest do
+  use Book4LessWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

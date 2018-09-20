@@ -1,7 +1,7 @@
-defmodule Book4lessWeb.Endpoint do
+defmodule Book4LessWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :book4less
 
-  socket "/socket", Book4lessWeb.UserSocket,
+  socket "/socket", Book4LessWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -40,5 +40,5 @@ defmodule Book4lessWeb.Endpoint do
     key: "_book4less_key",
     signing_salt: "Iza3Kffq"
 
-  plug Book4lessWeb.Router
+  plug Book4LessWeb.Router
 end

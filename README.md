@@ -1,4 +1,4 @@
-# Book4less
+# Book4Less
 
 To start your Phoenix server:
 
